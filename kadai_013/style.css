@@ -1,0 +1,109 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+/* PC用設定 */
+@media screen and (min-width: 768px){
+#nav-pc {
+  margin-top: 20px;
+}
+
+#nav-pc > a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+}
+/* コーヒーを注ぐ写真の設定 */
+#photo {
+  width: 90%;
+}
+
+#menu-sp {
+  display: none;
+}
+
+#nav-sp {
+  display: none;
+}
+}
+
+/* スマートフォン用設定 */
+@media screen and (max-width: 767px){
+  #nav-pc{
+    display: none;
+  }
+
+  body {
+  min-width: 375px;
+  margin: 0;
+}
+
+#menu-sp {
+  float: right;
+  padding: 0;
+}
+
+/* ps用ナビゲーション */
+#nav-sp {
+  background-color: #ce933e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
+
+/* ×ボタン */
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#logo-sp {
+  margin: 80px 0 30px 20px;
+}
+
+#nav-sp > a{
+  display: block;
+}
+
+#nav-sp > a:visited {
+  color: #ffffff;
+}
+
+#nav-sp > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#nav-sp > a:active {
+  color: #ffffff;
+}
+
+#nav-sp > menu {
+  text-decoration: none;
+  display: block;
+  margin: 0 20px 0 20px;
+  height: 44px;
+  font-size: 16px;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+#photo {
+  width: 100%;
+}
+}
+
+/* メイン画面の編集 */
+main {
+  width: 100%;
+  margin: 30px 0;
+}
+
+
